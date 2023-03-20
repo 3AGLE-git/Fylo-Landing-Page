@@ -287,7 +287,10 @@ figcaption {
 }
 
 .footer__logo img {
-  color: #fff;
+  filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(261deg)
+    brightness(99%) contrast(98%);
+  width: 50%;
+  height: auto;
 }
 
 .links {
@@ -335,6 +338,15 @@ figcaption {
   justify-content: center;
   align-items: center;
   gap: 1em;
+}
+
+.media {
+  filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(261deg)
+    brightness(99%) contrast(98%);
+}
+
+.media:hover {
+  color: var(--ACCESS-BTNCOLOR);
 }
 
 .cta:hover,
@@ -567,6 +579,13 @@ li:hover {
     justify-content: center;
     gap: 2rem;
     padding: 4em;
+  }
+
+  .footer__logo img {
+    /*     filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(261deg)
+      brightness(99%) contrast(98%); */
+    width: 15%;
+    height: auto;
   }
 
   .links {
